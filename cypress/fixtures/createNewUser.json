@@ -1,0 +1,23 @@
+{
+  "buttonCadastroLogin": "[href='/login']",
+  "campoCadastroNome": "[data-qa='signup-name']",
+  "campoCadastroEmail": "[data-qa='signup-email']",
+  "buttonCadastro": "[data-qa='signup-button']",
+  "radioSr":"[data-qa='title']",
+  "campoSenha":"[data-qa='password']",
+  "campoDia": "[data-qa='days']",
+  "campoMes": "[data-qa='months']",
+  "campoAno": "[data-qa='years']",
+  "campoNome":"[data-qa='first_name']",
+  "campoSobrenome":"[data-qa='last_name']",
+  "campoEmpresa":"[data-qa='company']",
+  "campoEndereco1":"[data-qa='address']",
+  "campoEndereco2":"[data-qa='address2']",
+  "campoPais":"[data-qa='country']",
+  "campoEstado":"[data-qa='state']",
+  "campoCidade":"[data-qa='city']",
+  "campoCep":"[data-qa='zipcode']",
+  "campoNumeroTelefone":"[data-qa='mobile_number']",
+  "buttonCriarConta":"[data-qa='create-account']",
+  "buttonContinuar":"[data-qa='continue-button']"
+}
