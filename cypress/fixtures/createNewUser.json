@@ -19,5 +19,6 @@
   "campoCep":"[data-qa='zipcode']",
   "campoNumeroTelefone":"[data-qa='mobile_number']",
   "buttonCriarConta":"[data-qa='create-account']",
-  "buttonContinuar":"[data-qa='continue-button']"
+  "buttonContinuar":"[data-qa='continue-button']",
+  "buttonLogout":"[href='/logout']"
 }

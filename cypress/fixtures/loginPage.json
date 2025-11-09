@@ -1,0 +1,7 @@
+{
+    "buttonFazerLogin":"[href='/login']",
+    "campoEmail": "[data-qa='login-email']",
+    "campoSenha":"[data-qa='login-password']",
+    "buttonLogin":"[data-qa='login-button']",
+    "buttonLogout":"[href='/logout']"
+}
