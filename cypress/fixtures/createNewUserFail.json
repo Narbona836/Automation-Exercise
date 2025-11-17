@@ -1,7 +1,0 @@
-{
-    "buttonCadastroLogin": "[href='/login']",
-    "campoCadastroNome": "[data-qa='signup-name']",
-    "campoCadastroEmail": "[data-qa='signup-email']",
-    "buttonCadastro": "[data-qa='signup-button']",
-    "mensagemErroEmailExistente": "[style='color: red;']"
-}

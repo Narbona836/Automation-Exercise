@@ -1,14 +1,11 @@
-import seletores from '../fixtures/createNewUserFail.json'
+import CreateUser from '../pages/createNewUserFaill'
 import loginData from '../fixtures/loginData.json'
 
 describe('Cadastro de usuario com e-mail existente', () => {
+  const createUser = new CreateUser()
   it('Deve exibir mensagem de erro ao tentar cadastrar com e-mail existente', () => {
-    cy.visit('/')
-    cy.get(seletores.buttonCadastroLogin).click()
-    cy.get(seletores.campoCadastroNome).type('Will test')
-    cy.get(seletores.campoCadastroEmail).type(loginData.email)
-    cy.get(seletores.buttonCadastro).click()
-    cy.get(seletores.mensagemErroEmailExistente).should('be.visible')
-    
+    createUser.iniciarCadastro()
+    createUser.preencherCdastro(loginData.email)
+    createUser.msgEmailInesistente() 
   })
 })

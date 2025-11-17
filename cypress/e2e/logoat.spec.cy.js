@@ -1,24 +1,20 @@
-import seletores from '../fixtures/loginPage.json'
+import LoginPages from "../pages/loginPages";
 
 describe('Logout', () => {
-    let emailAleatorio;
-    let senhaAleatoria;
+    const loginPages = new LoginPages()
+    let dadosLogin;
     before(() => {
         cy.fixture('loginData.json').then((data) => {
-            emailAleatorio = data.email;
-            senhaAleatoria = data.senha; 
-        });
+            dadosLogin = data
+        }); 
     })
-        beforeEach(() => {
-        cy.visit('/')
-        cy.get(seletores.buttonFazerLogin).click()
-        cy.get(seletores.campoEmail).type(emailAleatorio)
-        cy.get(seletores.campoSenha).type(senhaAleatoria)
-        cy.get(seletores.buttonLogin).click()
-        cy.get(seletores.buttonLogout).should('be.visible')
+    beforeEach(() => {
+        loginPages.acessarLoginPage()
+        loginPages.fazerLogin(dadosLogin.email, dadosLogin.senha);
+        loginPages.verificarLoginBemSucedido()
     })
     it('Deve realizar o logout com sucesso', () => {
-        cy.get(seletores.buttonLogout).click()
-        cy.get(seletores.buttonFazerLogin).should('be.visible')
+        loginPages.fazerLogout();
+        loginPages.verificarLogoutBemSucedido();
         })
     })
